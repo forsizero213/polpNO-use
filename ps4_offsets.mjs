@@ -533,12 +533,12 @@ export function offsetsFor(uaString) {
 //       wk_expm1_builtin and any shifted gadgets
 // ══════════════════════════════════════════════════════════════════════
 PS4["13.50"] = Object.assign({}, PS4["13.04"], {
-    alias_of: "13.04",
-    fw_status: "state=PARTIAL alias_of=13.04 "
-        + "webkit=assumed-shared-with-13.04 "
-        + "kernel_rvas=UNVERIFIED-assumed-13.04 "
+    alias_of: "13.50",
+    fw_status: "state=PARTIAL alias_of=13.50 "
+        + "webkit=assumed-shared-with-13.50 "
+        + "kernel_rvas=UNVERIFIED-assumed-13.50 "
         + "kpatch=1302.bin-UNVERIFIED bug=poops",
-    kpatch: "1302.bin",
+    kpatch: "1350.bin",
     // wk_expm1_builtin must be verified — if exploit stalls at stage 1
     // (ASLR anchor not found) the gadget moved. Run addfw.js to find it.
 });
@@ -546,8 +546,8 @@ PS4["13.50"] = Object.assign({}, PS4["13.04"], {
 PS4["13.52"] = Object.assign({}, PS4["13.50"], {
     alias_of: "13.50",
     fw_status: "state=PARTIAL alias_of=13.50 "
-        + "webkit=assumed-shared-with-13.04 "
+        + "webkit=assumed-shared-with-13.50 "
         + "kernel_rvas=UNVERIFIED "
         + "kpatch=1302.bin-UNVERIFIED bug=poops",
-    kpatch: "1302.bin",
+    kpatch: "1350.bin",
 });
